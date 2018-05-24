@@ -1,0 +1,19 @@
+﻿<Page xmlns:Grid="using:DevExpress.UI.Xaml.Grid" 
+    x:Class="CustomSummary.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:CustomSummary"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid:GridControl Name="grid" AutoGenerateColumns="True" ShowTotalSummary="True" 
+                          CustomSummary="grid_CustomSummary" >
+            <Grid:GridControl.TotalSummary>
+                <Grid:GridSummaryItem FieldName="Number" SummaryType="Custom"
+                                      DisplayFormat="Total empty cells count: {0}" />
+            </Grid:GridControl.TotalSummary>
+        </Grid:GridControl>
+    </Grid>
+</Page>

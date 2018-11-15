@@ -1,3 +1,9 @@
+<!-- default file list -->
+*Files to look at*:
+
+* [MainPage.xaml](./CS/CustomSummary/MainPage.xaml) (VB: [MainPage.xaml](./VB/CustomSummary/MainPage.xaml))
+* [MainPage.xaml.cs](./CS/CustomSummary/MainPage.xaml.cs) (VB: [MainPage.xaml](./VB/CustomSummary/MainPage.xaml))
+<!-- default file list end -->
 # How to: Summarize Empty Cells
 
 
